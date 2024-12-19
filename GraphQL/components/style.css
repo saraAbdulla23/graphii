@@ -1,0 +1,301 @@
+/* Global reset to ensure clean base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body styling */
+  html, body {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    /*background-color: #2f3136;*/
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  /* Profile content container */
+  .profile-content {
+    max-width: 2000px;  /* Max width to make sure it's not too wide on large screens */
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Nav container */
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Styling for graphs container */
+  .graphs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* XP Progression Container */
+  .XPprogression-container {
+    /*background-color: #1e1e1e;*/
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 110%;
+    max-width: 900px; /* Set max-width for large screens */
+    margin: 0 auto 30px auto;  /* Auto margins to center it */
+  }
+  
+  .chart-title {
+    color: #ed1818;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .chart-container {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  /* Styling for the user info section */
+.user-profile {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.profile-item {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.profile-item strong {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Styling for the graphs container */
+.graphs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.graphs-container > div {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.graphs-container > div:last-child {
+  margin-right: 0;
+}
+
+/* new */
+/* Styling for the Audit Ratio Graph */
+.audit-ratio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.donut-chart {
+  width: 120px;
+  height: 120px;
+}
+
+/* Donut Chart Text Display */
+.donut-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Styling for individual ratio details */
+.ratio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.ratio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ratio-item svg {
+  margin-right: 8px;
+}
+
+/* Styling for label and value text */
+.ratio-text .label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ratio-text .value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-left: 10px;
+}
+
+/* Styling for the ratio box */
+
+.ratio-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hover effect for ratio display */
+.ratio-box:hover {
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Styling the Logout button */
+.LogoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px; /* Adds spacing inside the button */
+  background-color: #4CAF50; /* Bright orange color */
+  color: white; /* White text */
+  border: none; /* Remove the default border */
+  border-radius: 30px; /* Rounded corners for a modern look */
+  font-size: 16px; /* Adjust text size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Hover effect */
+.LogoutBtn:hover {
+  background-color: red; /* Darker orange on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Increase shadow size */
+}
+
+/* Active state (when button is pressed) */
+.LogoutBtn:active {
+  transform: translateY(1px); /* Subtle downward press effect */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+}
+
+/* If there is an icon, align it properly with text */
+.LogoutBtn svg {
+  margin-right: 8px; /* Add spacing between icon and text */
+  fill: white; /* Make the icon white */
+  transition: all 0.3s ease; /* Smooth transition for icon */
+}
+
+/* On hover, make the icon change color too */
+.LogoutBtn:hover svg {
+  fill: #FFF176; /* Change icon color to a lighter shade of yellow */
+}
+
+/* Styling for Skills Section */
+.skills-section {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-type {
+  color: #4CAF50;
+}
+
+.skill-amount {
+  color: #FF5722;
+}
+
+.user-level, .user-xp {
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #4CAF50, #388E3C); /* Gradient background */
+  color: #fff; /* White text for contrast */
+  border-radius: 8px; /* Rounded corners for smooth look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition */
+  margin-bottom: 20px; /* Add space between each element */
+  cursor: pointer; /* Ensure it's clickable */
+}
+
+/* Hover effect */
+.user-level:hover, .user-xp:hover {
+  background: linear-gradient(135deg, #388E3C, #4CAF50); /* Inverse gradient on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Active state (when clicked) */
+.user-level:active, .user-xp:active {
+  transform: translateY(2px); /* Button presses down when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow when clicked */
+}
+
+/* On hover, change the icon color */
+.user-level:hover svg, .user-xp:hover svg {
+  fill: #FFF176; /* Lighter yellow on hover */
+}
+
+/* Focus state (important for accessibility) */
+.user-level:focus, .user-xp:focus {
+  outline: 3px solid #FFEB3B; /* Highlight outline for keyboard navigation */
+  outline-offset: 4px; /* Space between the element and outline */
+}
+
+
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
